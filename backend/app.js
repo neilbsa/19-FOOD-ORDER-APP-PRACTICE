@@ -63,7 +63,7 @@ app.post('/orders', async (req, res) => {
 
 app.use((req, res) => {
   if (req.method === 'OPTIONS') {
-    return res.sendStatus(200);
+    return res.sendStatus(204);
   }
 
   res.status(404).json({ message: 'Not found' });
